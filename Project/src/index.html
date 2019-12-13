@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My first Vue app</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
+</head>
+<body>
+  <div id="watch-example">
+    <p>这是一个区块链和供应链金融结合的小应用</p>
+  <div>
+    <h4>注册账户</h4>
+  <h5>账户类型:0代表银行,1代表个人账户</h5>
+    <input type="text" placeholder="请输入账户名" v-model="d1_1"/>
+    <input type="text" placeholder="请输入账户类型" v-model="d1_2"/>
+    <input type="text" placeholder="请输入账户初始金额" v-model="d1_3"/>
+    <input type="button" value="提交" @click="handlefunc1"/>
+    <div>{{msg1}}</div>
+  </div>
+  
+  <div>
+    <h4>输入账户返回账户信息</h4>
+    <input type="text" placeholder="请输入账户名" v-model="d2_1"/>
+    <input type="button" value="提交" @click="handlefunc2"/>
+    <div>{{msg2}}</div>
+  </div>
+  
+  <div>
+    <h4>转账</h4>
+    <input type="text" placeholder="请输入转账人" v-model="d3_1"/>
+    <input type="text" placeholder="请输入收款人" v-model="d3_2"/>
+    <input type="text" placeholder="请输入转账金额" v-model="d3_3"/>
+    <input type="button" value="提交" @click="handlefunc3"/>
+    <div>{{msg3}}</div>
+  </div>
+  
+  <div>
+    <h4>贷款</h4>
+    <input type="text" placeholder="请输入个人账户" v-model="d4_1"/>
+    <input type="text" placeholder="请输入银行" v-model="d4_2"/>
+    <input type="text" placeholder="请输入贷款金额" v-model="d4_3"/>
+    <input type="text" placeholder="请输入还款期限" v-model="d4_4"/>
+    <input type="button" value="提交" @click="handlefunc4"/>
+    <div>{{msg4}}</div>
+  </div>
+  
+  <div>
+    <h4>签订协议</h4>
+    <input type="text" placeholder="请输入见证银行" v-model="d5_1"/>
+    <input type="text" placeholder="请输入甲方账户" v-model="d5_2"/>
+    <input type="text" placeholder="请输入乙方账户" v-model="d5_3"/>
+    <input type="text" placeholder="请输入协议生效时间" v-model="d5_4"/>
+    <input type="text" placeholder="请输入协议失效时间" v-model="d5_5"/>
+    <input type="text" placeholder="请输入协议允许流动金额" v-model="d5_6"/>
+    <input type="button" value="提交" @click="handlefunc5"/>
+    <div>{{msg5}}</div>
+  </div>
+  
+  <div>
+    <h4>信任程序</h4>
+    <input type="text" placeholder="请输入银行账户" v-model="d6_1"/>
+    <input type="text" placeholder="请输入银行要信任的用户账户" v-model="d6_2"/>
+    <input type="button" value="提交" @click="handlefunc6"/>
+    <div>{{msg6}}</div>
+  </div>
+  
+  <div>
+    <h4>设置系统时间</h4>
+    <input type="text" placeholder="请输入要设置的系统时间" v-model="d7_1"/> 
+    <input type="button" value="提交" @click="handlefunc7"/>
+    <div>{{msg7}}</div>
+  </div>
+  </div>
+
+  <script>
+    var watchExampleVM = new Vue({
+      el: '#watch-example',
+      data: {
+        d1_1:'',
+        d1_2:'',
+        d1_3:'',
+        d2_1:'',
+        d3_1:'',
+        d3_2:'',
+        d3_3:'',
+        d4_1:'',
+        d4_2:'',
+        d4_3:'',
+        d4_4:'',
+        d5_1:'',
+        d5_2:'',
+        d5_3:'',
+        d5_4:'',
+        d5_5:'',
+        d5_6:'',
+        d6_1:'',
+        d6_2:'',
+        d7_1:'',
+        msg1:'',
+        msg2:'',
+        msg3:'',
+        msg4:'',
+        msg5:'',
+        msg6:'',
+        msg7:''
+      },
+      methods:{
+        handlefunc1(){
+          axios.get('http://localhost:3000/api',{
+            params:{
+              type:1,
+              account: this.d1_1,
+              account_type:this.d1_2,
+              account_asset:this.d1_3
+            }
+          }).then(res=>{
+              this.msg1 = res.data.result1;
+            }).catch(err=>{
+              this.msg1 = err;
+            });
+        },
+        handlefunc2(){
+          axios.get('http://localhost:3000/api',{
+            params:{
+              type:2,
+              account: this.d2_1
+            }
+          }).then(res=>{
+            if (res.data.result2 != "")
+              this.msg2 = res.data.result1 + ' [name:' + res.data.result2 + ' type:' + res.data.result3 + ' asset:' + res.data.result4 + ']';
+            else this.msg2 = res.data.result1;
+          }).catch(err=>{
+            this.msg2 = err;
+          });
+        },
+    handlefunc3(){
+      axios.get('http://localhost:3000/api',{
+        params:{
+          type:3,
+          account_A: this.d3_1,
+          account_B:this.d3_2,
+          money:this.d3_3
+        }
+      }).then(res=>{
+        this.msg3 = res.data.result1;
+      }).catch(err=>{
+        this.msg3 = err;
+      });
+    },
+    handlefunc4(){
+      axios.get('http://localhost:3000/api',{
+        params:{
+          type:4,
+          account_A: this.d4_1,
+          account_B:this.d4_2,
+          money:this.d4_3,
+          ddl:this.d4_4
+        }
+      }).then(res=>{
+        this.msg4 = res.data.result1;
+      }).catch(err=>{
+        this.msg4 = err;
+      });
+    },
+    handlefunc5(){
+      axios.get('http://localhost:3000/api',{
+        params:{
+          type:5,
+          bank: this.d5_1,
+          account_A:this.d5_2,
+          account_B:this.d5_3,
+          startTime:this.d5_4,
+          endTime:this.d5_5,
+          limit:this.d5_6
+        }
+      }).then(res=>{
+        this.msg5 = res.data.result1;
+      }).catch(err=>{
+        this.msg5 = err;
+      });
+    },
+    handlefunc6(){
+      axios.get('http://localhost:3000/api',{
+        params:{
+          type:6,
+          bank: this.d6_1,
+          account:this.d6_2
+        }
+      }).then(res=>{
+        this.msg6 = res.data.result1;
+      }).catch(err=>{
+        this.msg6 = err;
+      });
+    },
+    handlefunc7(){
+      axios.get('http://localhost:3000/api',{
+        params:{
+          type:7,
+          time: this.d7_1
+        }
+      }).then(res=>{
+        this.msg7 = res.data.result1;
+      }).catch(err=>{
+        this.msg7 = err;
+      });
+    }
+      }
+    })
+  </script>
+</body>
+</html>
