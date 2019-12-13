@@ -1,0 +1,76 @@
+info|2019-12-12 15:56:03.386284|[INITIALIZER][initGlobalConfig],enableCompress=true,compatibilityVersion=2.1.0,versionNumber=33619968,chainId=1
+info|2019-12-12 15:56:03.721380|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30300
+info|2019-12-12 15:56:03.721556|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30301
+info|2019-12-12 15:56:03.721606|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30302
+info|2019-12-12 15:56:03.721640|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30303
+info|2019-12-12 15:56:03.721671|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30304
+info|2019-12-12 15:56:03.721702|[P2P][Service] heartBeat,connected count=0
+info|2019-12-12 15:56:03.727585|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30304
+info|2019-12-12 15:56:03.728335|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30300
+info|2019-12-12 15:56:03.728542|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30301
+info|2019-12-12 15:56:03.728602|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30302
+info|2019-12-12 15:56:03.728645|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30303
+info|2019-12-12 15:56:03.728686|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30304
+info|2019-12-12 15:56:03.729106|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:47392
+info|2019-12-12 15:56:03.729162|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30304
+info|2019-12-12 15:56:03.786505|[CHANNEL]ChannelRPCServer started
+info|2019-12-12 15:56:03.815441|[INITIALIZER][RPCInitializer]ChannelRPCHttpServer started.
+info|2019-12-12 15:56:03.815519|[LedgerInitializer],groupConfigPath=conf/
+info|2019-12-12 15:56:03.816970|[INITIALIZER][initSingleLedger] [GroupId]:  1
+info|2019-12-12 15:56:03.817032|[g:1][LEDGER]LedgerConstructor,configPath=conf/group.1.genesis,baseDir=data//group1
+info|2019-12-12 15:56:03.817057|[g:1][LEDGER][initGenesisConfig]initConsensusConfig/initDBConfig/initTxConfig,configFile=conf/group.1.genesis
+info|2019-12-12 15:56:03.817271|[g:1][LEDGER][initConsensusConfig],it.first=824ae14a1c492a3b61d96b8fa5f51cf89b7cf60e32d0427f255c92bc5f712227af9cb010a0060848e49fc1d000476574576117d63732d6d10048b54b759ab9fd
+info|2019-12-12 15:56:03.817337|[g:1][LEDGER][initConsensusConfig],it.first=82d7b9b6e624f1b9b8a44203b996e8c3fbe58020da540a317a76163ca2b0c53c6f95be274bba842b7dd1a0fc909f7d9cc74123065f77d79b23f988dc5f5efbdf
+info|2019-12-12 15:56:03.817371|[g:1][LEDGER][initConsensusConfig],it.first=6a73c8131c3296502b6c1afaa888d73bb78659801a40317e63fdf7f6936eb455a4c5b3d10fe3f89f359c9bbdb31e2fdcca19dce5e133d9de2624e766605f14cf
+info|2019-12-12 15:56:03.817405|[g:1][LEDGER][initConsensusConfig],it.first=1306daf6c04d2ac96e80e252f890bcaf391bc051feee63617fa88f69e216f370947fdb2ab06e2fd7645fcac76a3f605d56f23001f16a125660f0c14a93602043
+info|2019-12-12 15:56:03.817467|[g:1][LEDGER][initIniConfig]initTxPoolConfig/initSyncConfig/initTxExecuteConfig,configFile=conf/group.1.ini
+info|2019-12-12 15:56:03.822291|[g:1][LEDGER][initLedger][DBInitializer]
+info|2019-12-12 15:56:03.822355|[g:1][DBINITIALIZER] [initRocksDBStorage]
+info|2019-12-12 15:56:03.873932|[g:1][ROCKSDB]open rocksDB handler
+info|2019-12-12 15:56:04.005684|[NETWORK][Host]startPeerSession, From=127.0.0.1:47392,nodeID=ef24e9ea...
+info|2019-12-12 15:56:04.048967|[NETWORK][Host]startPeerSession, From=127.0.0.1:30304,nodeID=ef24e9ea...
+info|2019-12-12 15:56:04.081806|[g:1][g:0][STORAGE][CachedStorage]Init flushStorage thread
+info|2019-12-12 15:56:04.127139|[g:1][BLOCKCHAIN][#checkAndBuildGenesisBlock]Already have the 0th block, 0th groupMark is equal to file groupMark.
+info|2019-12-12 15:56:04.146843|[P2P][Service] Connection established,nodeID=82d7b9b6...,endpoint=127.0.0.1:30301
+info|2019-12-12 15:56:04.147494|[g:1][CONSENSUS][PBFT]Register handler for PBFTEngine
+info|2019-12-12 15:56:04.149314|[g:1][CONSENSUS][PBFT],minBlockGenerationTime=500
+info|2019-12-12 15:56:04.149471|[LedgerInitializer init group succ],groupID=1
+info|2019-12-12 15:56:04.149872|[INITIALIZER][RPCInitializer]JsonrpcHttpServer started.
+info|2019-12-12 15:56:04.149904|[g:1][LEDGER]startAll...
+info|2019-12-12 15:56:04.165579|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=0,sealerIdx=0,hash=4c462f04...,next=1,tx=0,nodeIdx=65535
+info|2019-12-12 15:56:04.173162|[NETWORK][Host]startPeerSession, From=127.0.0.1:30301,nodeID=82d7b9b6...
+info|2019-12-12 15:56:04.174098|[P2P][Service] Connection established,nodeID=824ae14a...,endpoint=127.0.0.1:30300
+info|2019-12-12 15:56:04.174151|[NETWORK][Host]startPeerSession, From=127.0.0.1:30300,nodeID=824ae14a...
+info|2019-12-12 15:56:04.174377|[P2P][Service] Connection established,nodeID=1306daf6...,endpoint=127.0.0.1:30303
+info|2019-12-12 15:56:04.174423|[NETWORK][Host]startPeerSession, From=127.0.0.1:30303,nodeID=1306daf6...
+info|2019-12-12 15:56:04.180784|[P2P][Service] Connection established,nodeID=6a73c813...,endpoint=127.0.0.1:30302
+info|2019-12-12 15:56:04.180818|[NETWORK][Host]startPeerSession, From=127.0.0.1:30302,nodeID=6a73c813...
+info|2019-12-12 15:56:04.205414|[g:1][CONSENSUS][PBFT][PBFT init env successfully]
+info|2019-12-12 15:56:04.205706|[g:1][CONSENSUS][ConsensusEngine][Start ConsensusEngineBase]
+info|2019-12-12 15:56:04.216201|[g:1][CONSENSUS][PBFT][Start PBFTEngine...]
+info|2019-12-12 15:56:04.216261|[g:1][CONSENSUS][SEALER][Start sealer module]
+info|2019-12-12 15:56:04.216450|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=0,sealerIdx=0,hash=4c462f04...,next=1,tx=0,nodeIdx=65535
+info|2019-12-12 15:56:04.224495|[g:1][EVENT][EventLogFilterManager]start,m_maxBlockRange=0,m_maxBlockPerLoopFilter=3
+info|2019-12-12 15:56:13.722144|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:56:23.722478|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:56:33.723050|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:56:43.723294|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:56:53.723650|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:57:03.723800|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:57:13.724864|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:57:23.725674|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:57:33.725934|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:57:43.726258|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:57:53.726847|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:58:03.727170|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:58:13.727488|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:58:23.727695|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:58:33.727925|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:58:43.728284|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:58:53.728610|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:59:03.729740|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:59:13.730703|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:59:23.731647|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:59:33.732618|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:59:43.733794|[P2P][Service] heartBeat,connected count=4
+info|2019-12-12 15:59:53.734604|[P2P][Service] heartBeat,connected count=4

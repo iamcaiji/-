@@ -1,0 +1,73 @@
+[2019-10-25 17:57:28] Initializing...
+[INITIALIZER][Initializer]Init failed,EINFO=/FISCO-BCOS/libinitializer/LedgerInitializer.cpp(52): Throw in function void dev::initializer::LedgerInitializer::initConfig(const boost::property_tree::ptree &)
+Dynamic exception type: boost::exception_detail::clone_impl<dev::InitLedgerConfigFailed>
+std::exception::what: std::exception
+[dev::tag_comment*] = [LedgerInitializer]: Should init at least one group! Please check configuration!
+
+Init failed!!!
+[2019-10-25 18:00:10] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-10-25 18:00:10] The FISCO-BCOS is running...
+[2019-10-25 18:01:00] FISCO-BCOS program exit normally.
+[2019-10-25 18:01:20] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-10-25 18:01:20] The FISCO-BCOS is running...
+[2019-10-25 18:03:57] FISCO-BCOS program exit normally.
+[2019-10-25 18:04:01] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-10-25 18:04:01] The FISCO-BCOS is running...
+[2019-11-13 16:56:41] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-11-13 16:56:41] The FISCO-BCOS is running...
+[2019-11-13 17:06:21] FISCO-BCOS program exit normally.
+[2019-12-10 16:19:17] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-12-10 16:19:17] The FISCO-BCOS is running...
+[2019-12-10 23:46:58] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-12-10 23:46:58] The FISCO-BCOS is running...
+[2019-12-12 15:56:03] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-12-12 15:56:04] The FISCO-BCOS is running...
+[2019-12-12 16:24:51] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-12-12 16:24:52] The FISCO-BCOS is running...
+[2019-12-13 12:02:58] Initializing...
+FISCO-BCOS Version : 2.1.0
+Build Time         : 20190923 13:22:09
+Build Type         : Linux/clang/Release
+Git Branch         : HEAD
+Git Commit Hash    : cb68124d4fbf3df563a57dfff5f0c6eedc1419cc
+[2019-12-13 12:02:59] The FISCO-BCOS is running...

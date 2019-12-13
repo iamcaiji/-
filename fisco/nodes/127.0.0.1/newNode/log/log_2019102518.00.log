@@ -1,0 +1,90 @@
+info|2019-10-25 18:00:10.239225|[INITIALIZER][initGlobalConfig],enableCompress=true,compatibilityVersion=2.1.0,versionNumber=33619968,chainId=1
+info|2019-10-25 18:00:10.262420|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30300
+info|2019-10-25 18:00:10.262633|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30301
+info|2019-10-25 18:00:10.262686|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30302
+info|2019-10-25 18:00:10.262719|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30303
+info|2019-10-25 18:00:10.262751|[NETWORK][Host]Connecting to node,endpoint=127.0.0.1:30304
+info|2019-10-25 18:00:10.262781|[P2P][Service] heartBeat,connected count=0
+info|2019-10-25 18:00:10.264006|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30304
+info|2019-10-25 18:00:10.264593|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30300
+info|2019-10-25 18:00:10.264991|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30301
+info|2019-10-25 18:00:10.265416|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30302
+info|2019-10-25 18:00:10.265727|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30303
+info|2019-10-25 18:00:10.265814|[NETWORK][ASIO]asyncResolveConnect,endpoint=127.0.0.1:30304
+info|2019-10-25 18:00:10.268283|[NETWORK][Host]P2P Recv Connect, From=127.0.0.1:33892
+info|2019-10-25 18:00:10.271951|[NETWORK][Host]P2P StartAccept,Host=0.0.0.0:30304
+info|2019-10-25 18:00:10.272556|[CHANNEL]ChannelRPCServer started
+info|2019-10-25 18:00:10.272586|[INITIALIZER][RPCInitializer]ChannelRPCHttpServer started.
+info|2019-10-25 18:00:10.272606|[LedgerInitializer],groupConfigPath=conf/
+info|2019-10-25 18:00:10.272906|[INITIALIZER][initSingleLedger] [GroupId]:  1
+info|2019-10-25 18:00:10.272941|[g:1][LEDGER]LedgerConstructor,configPath=conf/group.1.genesis,baseDir=data//group1
+info|2019-10-25 18:00:10.272954|[g:1][LEDGER][initGenesisConfig]initConsensusConfig/initDBConfig/initTxConfig,configFile=conf/group.1.genesis
+info|2019-10-25 18:00:10.273011|[g:1][LEDGER][initConsensusConfig],it.first=824ae14a1c492a3b61d96b8fa5f51cf89b7cf60e32d0427f255c92bc5f712227af9cb010a0060848e49fc1d000476574576117d63732d6d10048b54b759ab9fd
+info|2019-10-25 18:00:10.273032|[g:1][LEDGER][initConsensusConfig],it.first=82d7b9b6e624f1b9b8a44203b996e8c3fbe58020da540a317a76163ca2b0c53c6f95be274bba842b7dd1a0fc909f7d9cc74123065f77d79b23f988dc5f5efbdf
+info|2019-10-25 18:00:10.273048|[g:1][LEDGER][initConsensusConfig],it.first=6a73c8131c3296502b6c1afaa888d73bb78659801a40317e63fdf7f6936eb455a4c5b3d10fe3f89f359c9bbdb31e2fdcca19dce5e133d9de2624e766605f14cf
+info|2019-10-25 18:00:10.273063|[g:1][LEDGER][initConsensusConfig],it.first=1306daf6c04d2ac96e80e252f890bcaf391bc051feee63617fa88f69e216f370947fdb2ab06e2fd7645fcac76a3f605d56f23001f16a125660f0c14a93602043
+info|2019-10-25 18:00:10.273098|[g:1][LEDGER][initIniConfig]initTxPoolConfig/initSyncConfig/initTxExecuteConfig,configFile=conf/group.1.ini
+info|2019-10-25 18:00:10.273418|[g:1][LEDGER][initLedger][DBInitializer]
+info|2019-10-25 18:00:10.273530|[g:1][DBINITIALIZER] [initRocksDBStorage]
+info|2019-10-25 18:00:10.278899|[g:1][ROCKSDB]open rocksDB handler
+info|2019-10-25 18:00:10.303188|[g:1][g:0][STORAGE][CachedStorage]Init flushStorage thread
+info|2019-10-25 18:00:10.305759|[g:1][g:1][STORAGE][CachedStorage]CachedStorage commit: 4 hash: 4c462f042d6b056a2b101da0e3c3f4f22cb406586307210b52d3214bf1c8a98a num: 0
+info|2019-10-25 18:00:10.305936|[g:1][STORAGE]Submited block task: 0, current syncd block: 0
+info|2019-10-25 18:00:10.305981|[g:1][BLOCKCHAIN][#checkAndBuildGenesisBlock]Insert the 0th block
+info|2019-10-25 18:00:10.306403|[STORAGE]Start commit block: 0 to backend storage
+info|2019-10-25 18:00:10.307454|[g:1][CONSENSUS][PBFT]Register handler for PBFTEngine
+info|2019-10-25 18:00:10.307535|[g:1][CONSENSUS][PBFT],minBlockGenerationTime=500
+info|2019-10-25 18:00:10.307587|[LedgerInitializer init group succ],groupID=1
+info|2019-10-25 18:00:10.310570|[INITIALIZER][RPCInitializer]JsonrpcHttpServer started.
+info|2019-10-25 18:00:10.310620|[g:1][LEDGER]startAll...
+info|2019-10-25 18:00:10.310858|[STORAGE][g:1]
+---------------------------------------------------------------------
+Commit block: 0 to backend storage finished, current cached block: 0
+Flush elapsed time: 0.0045s
+---------------------------------------------------------------------
+
+info|2019-10-25 18:00:10.311325|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=0,sealerIdx=0,hash=4c462f04...,next=1,tx=0,nodeIdx=65535
+info|2019-10-25 18:00:10.319062|[g:1][CONSENSUS][PBFT][PBFT init env successfully]
+info|2019-10-25 18:00:10.319099|[g:1][CONSENSUS][ConsensusEngine][Start ConsensusEngineBase]
+info|2019-10-25 18:00:10.324590|[g:1][CONSENSUS][PBFT][Start PBFTEngine...]
+info|2019-10-25 18:00:10.324600|[g:1][CONSENSUS][SEALER][Start sealer module]
+info|2019-10-25 18:00:10.324736|[g:1][CONSENSUS][PBFT]^^^^^^^^Report,num=0,sealerIdx=0,hash=4c462f04...,next=1,tx=0,nodeIdx=65535
+info|2019-10-25 18:00:10.328407|[g:1][EVENT][EventLogFilterManager]start,m_maxBlockRange=0,m_maxBlockPerLoopFilter=3
+info|2019-10-25 18:00:10.331738|[P2P][Service] Connection established,nodeID=824ae14a...,endpoint=127.0.0.1:30300
+info|2019-10-25 18:00:10.331778|[NETWORK][Host]startPeerSession, From=127.0.0.1:30300,nodeID=824ae14a...
+info|2019-10-25 18:00:10.331878|[P2P][Service] Connection established,nodeID=6a73c813...,endpoint=127.0.0.1:30302
+info|2019-10-25 18:00:10.331899|[NETWORK][Host]startPeerSession, From=127.0.0.1:30302,nodeID=6a73c813...
+info|2019-10-25 18:00:10.332002|[P2P][Service] Connection established,nodeID=1306daf6...,endpoint=127.0.0.1:30303
+info|2019-10-25 18:00:10.332021|[NETWORK][Host]startPeerSession, From=127.0.0.1:30303,nodeID=1306daf6...
+info|2019-10-25 18:00:10.332531|[P2P][Service] Connection established,nodeID=82d7b9b6...,endpoint=127.0.0.1:30301
+info|2019-10-25 18:00:10.332581|[NETWORK][Host]startPeerSession, From=127.0.0.1:30301,nodeID=82d7b9b6...
+info|2019-10-25 18:00:10.332645|[NETWORK][Host]startPeerSession, From=127.0.0.1:33892,nodeID=ef24e9ea...
+info|2019-10-25 18:00:10.332983|[NETWORK][Host]startPeerSession, From=127.0.0.1:30304,nodeID=ef24e9ea...
+info|2019-10-25 18:00:20.262989|[P2P][Service] heartBeat,connected count=4
+info|2019-10-25 18:00:30.263141|[P2P][Service] heartBeat,connected count=4
+info|2019-10-25 18:00:40.263470|[P2P][Service] heartBeat,connected count=4
+info|2019-10-25 18:00:50.263747|[P2P][Service] heartBeat,connected count=4
+info|2019-10-25 18:00:58.235871|[LEDGER]stop sealer,groupID=1
+info|2019-10-25 18:00:58.235895|[CONSENSUS][SEALER]Stop sealer module...
+info|2019-10-25 18:00:58.237834|[CONSENSUS][ConsensusEngine][Stop ConsensusEngineBase]
+info|2019-10-25 18:00:58.245241|[CONSENSUS][ConsensusEngine]ConsensusEngineBase stopped
+info|2019-10-25 18:00:58.245262|[LEDGER]sealer stopped. stop sync,groupID=1
+info|2019-10-25 18:00:58.279894|[SYNC][id:ef24e9ea...]SyncMaster stopped
+info|2019-10-25 18:00:58.280136|[LEDGER]ledger stopped,groupID=1
+info|2019-10-25 18:00:58.370177|[EVENT][EventLogFilterManager]stop
+info|2019-10-25 18:00:58.370196|[LEDGER]event filter manager stopped,groupID=1
+info|2019-10-25 18:00:58.370202|[INITIALIZER]ledgerInitializer stopped
+info|2019-10-25 18:00:59.370630|[INITIALIZER]ChannelRPCHttpServer deleted.
+info|2019-10-25 18:00:59.370983|[INITIALIZER]JsonrpcHttpServer deleted.
+info|2019-10-25 18:00:59.370998|[INITIALIZER]RPCInitializer stopped
+info|2019-10-25 18:00:59.371085|[NETWORK][Host]Host exit
+info|2019-10-25 18:00:59.371381|[INITIALIZER]P2PInitializer stopped
+info|2019-10-25 18:00:59.371394|[LEDGER]stop sealer,groupID=1
+info|2019-10-25 18:00:59.371402|[LEDGER]sealer stopped. stop sync,groupID=1
+info|2019-10-25 18:00:59.371407|[SYNC][id:ef24e9ea...]SyncMaster stopped
+info|2019-10-25 18:00:59.371412|[LEDGER]ledger stopped,groupID=1
+info|2019-10-25 18:00:59.371416|[LEDGER]event filter manager stopped,groupID=1
+info|2019-10-25 18:00:59.371425|[STORAGE]Stopping flushStorage thread
+info|2019-10-25 18:01:00.334562|[STORAGE]flushStorage thread stopped.
+info|2019-10-25 18:01:00.334577|[DBINITIALIZER] storage stopped
+info|2019-10-25 18:01:00.334623|[SYNC][id:ef24e9ea...]SyncMaster stopped
